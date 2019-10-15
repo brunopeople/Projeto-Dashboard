@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard';
 import { DadosService } from './dados.service';
 
+
 @NgModule({
   declarations: [
     AppComponent

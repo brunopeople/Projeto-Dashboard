@@ -13,6 +13,10 @@ import { DadosService } from './dados.service';
 
   exports: [
     DashboardComponent
+  ],
+
+  providers: [
+    DadosService
   ]
 })
 export class DashboardModule { }
