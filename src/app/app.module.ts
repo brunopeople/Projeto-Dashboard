@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardModule } from './dashboard';
-import { DadosService } from './dados.service';
+import { DashboardModule, DadosService } from './dashboard';
+
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { DadosService } from './dados.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardModule
   ],
   providers: [
     DadosService

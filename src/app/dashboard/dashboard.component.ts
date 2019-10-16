@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DadosService } from './dados.service';
-import { setTimeout } from 'timers';
+import { Observable } from 'rxjs/Observable';
 
 declare var google: any;
 
