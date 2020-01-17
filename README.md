@@ -1,26 +1,37 @@
 # Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+Este projeto foi gerado pelo Framework Javascript [Angular CLI](https://github.com/angular/angular-cli) na sua versão em 8.3.8.
 
-## Development server
+## Instalação do Angular CLI
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para a instalação do angular é preciso primeiro 
 
-## Code scaffolding
+## Rodando o Servidor
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para que a aplicação Rode é preciso primeiramente ter instalado o Node.js, após sua instalação digite no seu prompt de comando ng serve -o, com isto a aplicação vai criar um servidor host localhost:4200//. 
+
+## Instalação 
+
+Após instalar o Node.js, rode o seu prompt e digite o comando npm install -g @angular/cli
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para realizar o build do projeto, rode o comando 'ng build'. O artefato será do projeto será arquivado no diretório 'dist/'. Para sinalizar que a aplicação é feita para produção use o '--prod'.
 
-## Running unit tests
+## Observações
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# A aplicação tem um Delay de um segundo para rodar, isto se dá pelo fato que está sendo feito uma requisição na APi do Google para que faça a geração dos gráficos. É Recomendavel roda a aplicação com o console.log do Chrome habilitado e reinicilizar o navegador. 
 
-## Running end-to-end tests
+# É bem provável que ao rodar a aplicação que ocorra um erro onde o angular não encontre o módulo @angular-devkit/angular-build, este erro ocorre na versão 6.0 do angular, basta apenas rodar os seguintes comandos.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+'npm install'
+'ng update'
+'npm update'
+
+ou se a versão do angular for a 6.0 basta apenas rodar o comando 'npm install --save-dev @angular-devikit/angular-build'.
+
+
+
 
 ## Further help
 
